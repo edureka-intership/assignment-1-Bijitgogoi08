@@ -1,0 +1,153 @@
+<!-- Restaurant Page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Page</title>
+    <link rel="stylesheet" href="./FilterPage.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <b>e!</b>
+        </div>
+
+        <div style="float: right;">
+            <div class="login">Login</div>
+            <div class="account">Create an account</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- Title -->
+        <div class="heading">Breakfast Places in Mumbai</div>
+        <!-- 3 Boxes -->
+        <!-- Filter Block -->
+        <div class="filter-block" style="display: inline-block;">
+            <b>Filters</b><br>
+            Location <br><select name="Location" id="city">
+                <option value="Select" selected disabled>Select location</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Gurgaon">Gurgaon</option>
+            </select><br><br>
+
+            <b>Cuisine</b> <br>
+            <label for="northindian">
+                <input type="checkbox" name="cuisines" id="northindian" value="cuisinenorthindian">North Indian
+            </label><br>
+            <label for="southindian">
+                <input type="checkbox" name="cuisines" id="southindian" value="cuisinesouthindian">South Indian
+            </label><br>
+            <label for="chinese">
+                <input type="checkbox" name="cuisines" id="chinese" value="uisinechinese">Chinese
+            </label><br>
+            <label for="fastfood">
+                <input type="checkbox" name="cuisines" id="fastfood" value="cuisinefastfood">Fast Food
+            </label><br>
+            <label for="streetfood">
+                <input type="checkbox" name="cuisines" id="streetfood" value="suisinestreetfood">Street Food
+            </label><br><br>
+
+            <b>Cost for Two</b><br>
+            <label for="500">
+                <input type="radio" name="Cost" id="500" value="lessthan500">Less than 500
+            </label><br>
+            <label for="1000">
+                <input type="radio" name="Cost" id="1000" value="lessthan1000">500 to 1000
+            </label><br>
+            <label for="1500">
+                <input type="radio" name="Cost" id="1500" value="lessthan1500">1000 to 1500
+            </label><br>
+            <label for="2000">
+                <input type="radio" name="Cost" id="2000" value="lessthan2000">1500 to 2000
+            </label><br>
+            <label for="2000+">
+                <input type="radio" name="Cost" id="2000+" value="morethan2000">2000+
+            </label><br><br>
+
+            <b>Sort</b><br>
+            <label for="high">
+                <input type="radio" name="sort" id="high" value="hightolow">High to Low
+            </label><br>
+            <label for="low">
+                <input type="radio" name="sort" id="low" value="lowtohigh">Low to High
+            </label><br><br>
+
+
+
+
+        </div>
+        <!-- Result Blocks -->
+        <div style="display: inline-block; vertical-align: top;">
+            <div class="item">
+                <div style="display: inline-block;">
+                    <img class="image1" src="./Images/image1.png"/>
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    <div class="t1">The Big Chill Cakery</div>
+                    <div class="t2">FORT</div>
+                    <div class="t3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                </div><hr>
+                <div>
+                    <table>
+                        <tr style="text-align: left;">
+                            <th>CUISINES</th>
+                            <td>Bakery</td>
+                        </tr>
+                        <tr>
+                            <th>COST FOR TWO</th>
+                            <td>&#8377;700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <div style="display: inline-block;">
+                    <img class="image1" src="./Images/image1.png"/>
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    <div class="t1">The Big Chill Cakery</div>
+                    <div class="t2">FORT</div>
+                    <div class="t3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                </div>
+                <hr>
+                <div>
+                    <table>
+                        <tr style="text-align: left;">
+                            <th>CUISINES</th>
+                            <td>Bakery</td>
+                        </tr>
+                        <tr>
+                            <th>COST FOR TWO</th>
+                            <td>&#8377;700</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        
+        <!-- pagination -->
+        <div class="first">
+           
+            <a href="" class="second"><</a>
+            <a href="" class="second">1</a>
+            <a href="" class="second">2</a>
+            <a href="" class="second">3</a>
+            <a href="" class="second">4</a>
+            <a href="" class="second">5</a>
+            <a href="" class="second">6</a>
+            <a href="" class="second">></a>
+
+
+        </div>
+
+        
+
+    </div>
+    
+
+</body>
+
+</html>
